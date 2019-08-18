@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">靈骨塔定位</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="set_target_position_title">設定目標位置</string>
+    <string name="set_target_position_message">請輸入目標座標,以利為您進行定位導航.</string>
+    <string name="button_ok">OK</string>
+
+    <string name="dialog_position_layer">請輸入位置樓層</string>
+    <string name="dialog_position_x">請輸入座標 X</string>
+    <string name="dialog_position_y">請輸入座標 Y</string>
+
+</resources>
