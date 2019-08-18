@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "507312438189",
+    "firebase_url": "https://ksuhomemanagement.firebaseio.com",
+    "project_id": "ksuhomemanagement",
+    "storage_bucket": "ksuhomemanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507312438189:android:888437c1865b193d",
+        "android_client_info": {
+          "package_name": "com.dev.lungyu.homecontroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507312438189-otjtpophdo8ntmllepnb2eprn5h3scdb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.lungyu.homecontroller",
+            "certificate_hash": "d13bccfb2700bb458969443563f569ce285c78c6"
+          }
+        },
+        {
+          "client_id": "507312438189-hvq65bqiv83hgio72m4jipmhjd524pil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXOgjvoj0cB9ewEwxi0N22mKpAYmOBc38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507312438189-hvq65bqiv83hgio72m4jipmhjd524pil.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

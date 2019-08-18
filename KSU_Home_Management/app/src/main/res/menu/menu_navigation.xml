@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navMain"
+            android:icon="@drawable/toolbar_account"
+            android:title="@string/navigation_home" />
+        <item
+            android:id="@+id/nvaControl"
+            android:icon="@drawable/navigation_item_one"
+            android:title="@string/navigation_control" />
+        <item
+            android:id="@+id/navSetup"
+            android:icon="@drawable/navigation_item_two"
+            android:title="@string/navigation_setup" />
+
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/navigation_item_logout"
+            android:title="@string/navigation_logout" />
+    </group>
+
+</menu>

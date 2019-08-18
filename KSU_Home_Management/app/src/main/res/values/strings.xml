@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">HomeController</string>
+
+    <string name="btn_login">登入</string>
+    <string name="btn_register">註冊</string>
+
+    <string name="close_navigation">Close Navigation</string>
+    <string name="name">Name :</string>
+    <string name="country">Country :</string>
+    <string name="email">Email :</string>
+    <string name="comment">Comment</string>
+    <string name="favorite">Favorite</string>
+    <string name="account">Account</string>
+    <string name="smartphone">Smartphone</string>
+    <string name="place">Place</string>
+    <string name="friend">Friend</string>
+    <string name="setting">Setting</string>
+    <string name="contact">Contact us</string>
+    <string name="view_one">View One</string>
+
+    <string name="navigation_home">Home</string>
+    <string name="navigation_control">Control</string>
+    <string name="navigation_setup">Setup</string>
+    <string name="navigation_logout">Logout</string>
+
+    <string name="dialog_process_title">資料讀取中</string>
+    <string name="dialog_process_detail">請稍後...</string>
+    <string name="dialog_valid_title">資料驗證中</string>
+
+    <string name="web_api_url_login">http://120.114.134.135/webapi/login.php</string>
+    <string name="web_api_url_devices">http://120.114.134.135/webapi/device_list.php</string>
+    <string name="web_api_url_deviceInfo">http://120.114.134.135/webapi/device_info.php</string>
+    <string name="web_api_url_control_list">http://120.114.134.135/webapi/control_device_list.php</string>
+    <string name="web_api_url_control_action">http://120.114.134.135/webapi/control_device.php</string>
+    <string name="web_api_url_alert_condition">http://120.114.134.135/webapi/add_alert.php</string>
+    <string name="web_api_url_device_group">http://120.114.134.135/webapi/device_group.php</string>
+    <string name="web_api_url_alert_condition_list">http://120.114.134.135/webapi/alert_condition_list.php</string>
+    <string name="web_api_url_del_alert">http://120.114.134.135/webapi/del_alert.php</string>
+    <string name="web_api_url_device_control_group">http://120.114.134.135/webapi/device_spinner.php</string>
+
+    <string name="version">Version</string>
+    <string name="author">Author</string>
+    <string name="author_name">tygr</string>
+    <string name="author_email">workfile975@gmail.com</string>
+    <string name="open_navigation">open navigation</string>
+    <string name="label_account">帳號 : </string>
+    <string name="label_password">密碼 : </string>
+    <string name="label_condition_name">condition name</string>
+    <string name="label_add">新增</string>
+    <string name="label_condition">條件:</string>
+    <string name="label_ctrl_device">觸發設備 : </string>
+    <string name="label_btn_delete">刪除</string>
+</resources>
+
