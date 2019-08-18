@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueb" >
+
+    <Button
+        android:id="@+id/uart_button6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="20dp"
+        android:text="離開" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uart_button6"
+        android:layout_alignBottom="@+id/uart_button6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="回上頁" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="ToggleButton" />
+
+    <Button
+        android:id="@+id/on"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/off"
+        android:layout_below="@+id/off"
+        android:layout_marginTop="16dp"
+        android:text="關電燈" />
+
+    <Button
+        android:id="@+id/off"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButton1"
+        android:layout_below="@+id/toggleButton1"
+        android:text="開電燈" />
+
+    <ImageView
+        android:id="@+id/lightonoff"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lightoff" />
+
+</RelativeLayout>

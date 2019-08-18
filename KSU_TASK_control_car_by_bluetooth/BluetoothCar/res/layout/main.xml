@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 格頁中的佈局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp" >
+
+            <!-- 放置你想要顯示的分頁畫面 -->
+            <!-- 第一個layout -->
+
+            <FrameLayout
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+				
+                <!-- 第一個layout下顯示的內容(可以放置你想要使用的原件) -->
+
+            </FrameLayout>
+            <!-- 第二個layout -->
+
+            <FrameLayout
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <!-- 第二個layout下顯示的員建 -->
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <!-- tab的格式 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        </TabWidget>
+    </LinearLayout>
+
+</TabHost>
