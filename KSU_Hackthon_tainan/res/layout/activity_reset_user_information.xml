@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_info" >
+
+    <RadioGroup
+        android:id="@+id/radioGroupSex"
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:layout_x="115dp"
+        android:layout_y="150dp"
+        android:hint="@string/set_user_sex"
+        android:orientation="horizontal"
+        android:singleLine="true" >
+
+        <RadioButton
+            android:id="@+id/setSexMale"
+            android:text="@string/set_user_male" />
+
+        <RadioButton
+            android:id="@+id/setSexFemale"
+            android:text="@string/set_user_female" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="325dp"
+        android:onClick="onSaved"
+        android:text="儲存" />
+
+    <EditText
+        android:id="@+id/editTxex_height"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="230dp"
+        android:ems="4"
+        android:hint="@string/set_user_height"
+        android:maxLength="5"
+        android:numeric="decimal"
+        android:singleLine="true"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/editTxex_age"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="185dp"
+        android:ems="10"
+        android:hint="@string/set_user_age"
+        android:maxLength="3"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/editTxex_weight"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="275dp"
+        android:ems="10"
+        android:hint="@string/set_user_weight"
+        android:maxLength="5"
+        android:numeric="decimal"
+        android:singleLine="true"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/editTxextUserName"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="110dp"
+        android:ems="10"
+        android:hint="@string/set_user_name"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textSize="30px" >
+
+        <requestFocus />
+    </EditText>
+
+</AbsoluteLayout>

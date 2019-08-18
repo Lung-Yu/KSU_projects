@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueb" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/uart_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@android:drawable/edit_text" >
+
+            <TextView
+                android:id="@+id/uart_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#ff000000"
+                android:textSize="5dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="搜尋裝置" />
+
+    <Button
+        android:id="@+id/link"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="56dp"
+        android:layout_weight="1"
+        android:text="連結裝置" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/find"
+        android:layout_below="@+id/find"
+        android:layout_marginTop="58dp"
+        android:layout_weight="1" />
+
+</RelativeLayout>
