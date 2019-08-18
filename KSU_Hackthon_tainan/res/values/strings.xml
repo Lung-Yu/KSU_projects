@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  -->
+    <string name="app_name">台南動吃動</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- setting user information -->
+    <string name="set_user_name">暱稱</string>
+    <string name="set_user_sex">性別</string>
+    <string name="set_user_age">年紀</string>
+    <string name="set_user_height">身高</string>
+    <string name="set_user_weight">體重</string>
+    <string name="set_user_male">男</string>
+    <string name="set_user_female">女</string>
+    
+
+    <!-- layout: activity_main_switcher -->
+    <string name="aboutThisAppInfo">關於</string>
+    <string name="gameInfo">相關競賽</string> <!-- use open data -->
+    <string name="startRunning">跑步計算</string>
+    <string name="runningHistory">跑步紀錄</string>
+    <string name="resetInfo">重設資料</string>
+    <string name="updateTnsport">更新openData</string>
+
+    <!-- layout: activity_running -->
+    <string name="start_running">開始</string>
+    <string name="end_runed">結束</string>
+    <string name="show_bring">運動完記得進行收操才不會受傷</string>
+
+    <!-- menu option -->
+    <string name="action_update">更新資料</string>
+
+</resources>

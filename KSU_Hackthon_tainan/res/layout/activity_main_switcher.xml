@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_test_2" >
+
+    <ImageButton
+        android:id="@+id/ImageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="296dp"
+        android:layout_y="536dp"
+        android:onClick="toAbout"
+        android:src="@drawable/home_about"
+        android:text="@string/updateTnsport" />
+
+    <ImageButton
+        android:id="@+id/ImageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="244dp"
+        android:onClick="goToShowHistoryPage_click"
+        android:src="@drawable/home_2"
+        android:text="@string/runningHistory" />
+
+    <ImageButton
+        android:id="@+id/ImageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="242dp"
+        android:layout_y="242dp"
+        android:onClick="goToRunningPage_click"
+        android:src="@drawable/home_4"
+        android:text="@string/startRunning" />
+
+    <ImageButton
+        android:id="@+id/ImageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="129dp"
+        android:layout_y="392dp"
+        android:onClick="goResetInfo"
+        android:src="@drawable/home_3"
+        android:text="@string/resetInfo" />
+
+    <ImageButton
+        android:id="@+id/ImageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="134dp"
+        android:layout_y="116dp"
+        android:onClick="goToGamePage_click"
+        android:src="@drawable/home_1"
+        android:text="@string/gameInfo" />
+
+</AbsoluteLayout>
