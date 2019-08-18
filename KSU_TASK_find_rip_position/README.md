@@ -1,0 +1,1 @@
+# KSU_TASK_find_rip_position
