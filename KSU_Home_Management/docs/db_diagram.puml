@@ -1,0 +1,123 @@
+@startuml
+' uncomment the line below if you're using computer with a retina display
+' skinparam dpi 300
+!define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+' we use bold for primary key
+' green color for unique
+' and underscore for not_null
+!define primary_key(x) <b>x</b>
+!define forgeign_key(x) <color:blue>x</color>
+!define md5(x) <color:gray>x</color>
+!define unique(x) <color:green>x</color>
+!define not_null(x) <u>x</u>
+' other tags available:
+' <i></i>
+' <back:COLOR></color>, where color is a color name or html color code
+' (#FFAACC)
+' see: http://plantuml.com/classes.html#More
+hide methods
+hide stereotypes
+
+' entities
+
+Table(sensor,"sensor\n(Sensor info)"){
+    primary_key(id) INTEGER
+    ===
+    name VARCHAR
+    unit VARCHAR
+    bit isControlDevice
+}
+
+Table(device,"Device\n(Device info)"){
+    primary_key(mac) VARCHAR
+    ===
+    name VARCHAR
+}
+
+Table(data,"Data\n(sensor data)"){
+    primary_key(id) INTEGER
+    forgeign_key(mac) VARCHAR
+    ===
+    type INTEGER
+    data DOUBLE
+}
+
+Table(user,"User\n(User info)"){
+    primary_key(account) VARCHAR
+    md5(not_null(password)) VARCHAR
+    not_null(uername) VARCHAR[64]
+    email VARCHAR
+}
+
+Table(alert_condition,"alert_condition"){
+    primary_key(id) INTEGER
+    forgeign_key(sid) INTEGER
+    forgeign_key(mac) VARCHAR
+    ===
+    name VARCHAR
+    option VARCHAR
+    condition_value INTEGER
+}
+
+Table(action,"action"){
+    primary_key(id) INTEGER
+    forgeign_key(alert_id) INTEGER
+    forgeign_key(device_type) INTEGER
+    forgeign_key(mac) VARCHAR
+    ===
+    action_status VARCHAR[1]
+    last_update_time datetime
+}
+
+
+Table(user_and_device,"user_and_device\n(group of user and device)"){
+
+}
+
+Table(alert_action,"alert_action\n(record user setting action)"){
+
+}
+
+Table(overview,"overview(summarize for website)"){
+    primary_key(id) INTEGER
+    forgeign_key(device_id) INTEGER
+    ===
+    temperature DOUBLE
+    humidity DOUBLE
+    PM2dot5 DOUBLE
+    PM10 DOUBLE
+    CO DOUBLE
+    CO2 DOUBLE
+    smog DOUBLE
+    gas DOUBLE
+    timestamp datetime
+}
+
+
+note right of overview
+    offline work.
+    summarize raw data for web site.
+end note
+
+
+
+data "type" --> "id" sensor
+data "mac" --> "mac" device
+action "device_type" --> "id" sensor 
+action "alert_id" --> "id" alert_condition 
+alert_condition "mac" --> "mac" device
+alert_condition "sid" --> "id" sensor
+action "mac" --> "mac" device
+overview "device_id" --> "mac" device
+ 
+
+' relationships
+' one-to-one relationship
+'user -- user_profile : "A user only \nhas one profile"
+' one to may relationship
+'user --> session : "A user may have\n many sessions"
+' many to many relationship
+' Add mark if you like
+'user "1" --> "*" user_group : "A user may be \nin many groups"
+'group "1" --> "0..N" user_group : "A group may \ncontain many users"
+@enduml
